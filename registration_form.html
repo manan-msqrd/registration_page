@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+    <form action="" method="get">
+        <h1 class="main_heading">Registration Form</h1>
+        <hr>
+        <h2>Personal Information</h2>
+
+
+        <div class="input-group">
+        <label>First Name:* </label>
+        <input id="first-name" type="text" name="first_name" placeholder="Enter your First Name" onkeyup="validateFirstName()" required>
+        <span id="first-name-error"></span>
+        </div>
+
+        <div class="input-group">
+        <label>Middle Name:</label>
+        <input id="middle-name" type="text" name="middle_name" placeholder="Enter your Middle Name">
+        <span id="middle-name-error"></span>
+        </div>
+
+        <div class="input-group">
+        <label>Last Name:*</label>
+        <input id="last-name" type="text" name="last_name" placeholder="Enter your Last Name" onkeyup="validateLastName()" required>
+        <span id="last-name-error"></span>
+        </div>
+
+
+        <label>Course:*</label>
+            <select name="course_name" id="course-name" required>
+                <option value="">Course</option>
+                <option value="Course 1">Course 1</option>
+                <option value="Course 2">Course 2</option>
+                <option value="Course 3">Course 3</option>
+                <span id="course-error"></span>
+            </select>     
+            <br>
+            <br>
+
+
+        <label>Gender:*</label>
+            <p> <input type="radio" name="gender" id="male" required>Male  
+                <input type="radio" name="gender" id="female" required>Female
+                <input type="radio" name="gender" id="other" required>Other
+            </p>
+            
+      
+
+        <label>Phone:* </label>
+        <div class="input-group">
+            <input type="text" name="phone_code" value="+91" size="4" placeholder="Enter your country code" required>
+            <input type="tel" id="phone-number" name="phone_number" minlength="10" maxlength="10" placeholder="Enter your phone number" onkeyup="validatePhone()" required>
+            <span id="phone-error"></span>
+        </div>
+
+
+        <div class="address-group">Address:* 
+            <textarea cols="50" rows="4" value="address" <input id="address" type="text" placeholder="Enter your address here..." onkeyup="validateAddress()" required>
+            </textarea>
+            <span id="address-error"></span>
+        </div>
+
+
+        <div class="submit-group">
+            <input class="button" id="submit-button"type="submit" value="Submit" onclick="return validateForm()"> 
+            <span id="submit-error"></span>
+        </div>
+
+
+    </form>
+    <script src="validation.js"></script>
+</body>
+</div>
+</html>

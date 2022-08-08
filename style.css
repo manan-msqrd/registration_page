@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+    background: rgb(42, 41, 41)
+}
+
+.container{
+    background-color: rgb(206, 201, 201);
+    padding: 5px 20px 15px 20px;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+select{
+    width: 25%;
+    height: 28px;
+    border-color: gray;
+    font-size: 15px;
+
+}
+
+.main_heading{
+    text-align: center;
+}
+
+input[type="submit"]{
+    background-color: green;
+    opacity: 0.9;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+   
+}
+
+input[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+.input-group span{
+    position: relative;
+    left: 85%;
+    color: red;
+    font-size: 13px;
+}
+
+.address-group span{
+    position: absolute;
+    left: 89%;
+    top: 104%;
+    color: black;
+    font-size: 13px;
+}
+
+.submit-group span{
+    position: relative;
+    left: 40%;
+    color: red;
+    font-size: 13px;
+}
